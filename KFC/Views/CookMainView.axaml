@@ -22,18 +22,21 @@
                         <StackPanel Background="Transparent"
                                     Margin="10">
                                 <Button Content="Заказы" HorizontalContentAlignment="Center" 
+                                        Background="MediumPurple"
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Stretch"
                                         Height="30" Margin="5"
                                         Command="{Binding OpenOrdersCookPage}"/>
                     
                                 <Button Content="Профиль" HorizontalContentAlignment="Center" 
+                                        Background="MediumPurple"
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Stretch"
                                         Height="30" Margin="5"
                                         Command="{Binding OpenProfilePage}"/>
                                 
                                 <Button Content="Выйти" HorizontalContentAlignment="Center"
+                                        Background="MediumPurple"
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Stretch"
                                         Height="30" Margin="5"

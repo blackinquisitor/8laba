@@ -21,8 +21,8 @@
                 <DataGrid.Columns>
                         <DataGridTextColumn IsReadOnly="True" Header="№" Binding="{Binding IdUser}"/>
                         <DataGridTextColumn IsReadOnly="True" Header="Имя" Binding="{Binding Fname}"/>
-                        <DataGridTextColumn IsReadOnly="True" Header="Фамилия" Binding="{Binding Sname}"/>
-                        <DataGridTextColumn IsReadOnly="True" Header="Отчество" Binding="{Binding Lname}"/>
+                        <DataGridTextColumn IsReadOnly="True" Header="Фамилия" Binding="{Binding Lname}"/>
+                        <DataGridTextColumn IsReadOnly="True" Header="Отчество" Binding="{Binding Sname}"/>
                         <DataGridTextColumn IsReadOnly="True" Header="Должность" Binding="{Binding IdPostNavigation.Name}"/>
                         <DataGridTextColumn IsReadOnly="True" Header="Статус" Binding="{Binding IdStatusNavigation.Name}"/>
                         <DataGridTemplateColumn>

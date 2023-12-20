@@ -22,24 +22,28 @@
                         <StackPanel Background="Transparent"
                                     Margin="10">
                                 <Button Content="Меню блюд" HorizontalContentAlignment="Center" 
+                                        Background="MediumPurple"
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Stretch"
                                         Height="30" Margin="5"
                                         Command="{Binding OpenMenuDishPage}"/>
                     
                                 <Button Content="Сотрудники" HorizontalContentAlignment="Center" 
+                                        Background="MediumPurple"
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Stretch"
                                         Height="30" Margin="5"
                                         Command="{Binding OpenEmployeesPage}"/>
                                 
                                 <Button Content="Заказы" HorizontalContentAlignment="Center" 
+                                        Background="MediumPurple"
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Stretch"
                                         Height="30" Margin="5"
                                         Command="{Binding OpenOrdersPage}"/>
                     
                                 <Button Content="Создать отчёт" HorizontalContentAlignment="Center"
+                                        Background="MediumPurple"
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Stretch"
                                         Height="30" Margin="5"
@@ -47,12 +51,14 @@
                                         CommandParameter="{ReflectionBinding ElementName=ThisWindow}"/>
                     
                                 <Button Content="Профиль" HorizontalContentAlignment="Center" 
+                                        Background="MediumPurple"
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Stretch"
                                         Height="30" Margin="5"
                                         Command="{Binding OpenProfilePage}"/>
                                 
                                 <Button Content="Выйти" HorizontalContentAlignment="Center"
+                                        Background="MediumPurple"
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Stretch"
                                         Height="30" Margin="5"

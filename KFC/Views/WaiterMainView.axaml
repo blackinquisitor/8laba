@@ -22,31 +22,35 @@
                         <StackPanel Background="Transparent"
                                     Margin="10">
                                 <Button Content="Заказы" HorizontalContentAlignment="Center" 
+                                        Background="MediumPurple"
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Stretch"
                                         Height="30" Margin="5"
                                         Command="{Binding OpenOrdersPage}"/>
                                 
                                 <Button Content="Новый заказ" HorizontalContentAlignment="Center" 
+                                        Background="MediumPurple"
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Stretch"
                                         Height="30" Margin="5"
                                         Command="{Binding OpenNewOrderPage}"/>
                     
-                                <Button Content="Создать отчёт" HorizontalContentAlignment="Center"
+                                <!--<Button Content="Создать отчёт" HorizontalContentAlignment="Center"
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Stretch"
                                         Height="30" Margin="5"
                                         Command="{ReflectionBinding CreateReport}"
-                                        CommandParameter="{ReflectionBinding ElementName=ThisWindow}"/>
+                                        CommandParameter="{ReflectionBinding ElementName=ThisWindow}"/>-->
                     
                                 <Button Content="Профиль" HorizontalContentAlignment="Center" 
+                                        Background="MediumPurple"
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Stretch"
                                         Height="30" Margin="5"
                                         Command="{Binding OpenProfilePage}"/>
                                 
                                 <Button Content="Выйти" HorizontalContentAlignment="Center"
+                                        Background="MediumPurple"
                                         VerticalContentAlignment="Center"
                                         HorizontalAlignment="Stretch"
                                         Height="30" Margin="5"

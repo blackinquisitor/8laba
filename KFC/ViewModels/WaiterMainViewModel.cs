@@ -18,6 +18,7 @@ public class WaiterMainViewModel : ViewModelBase
 {
     
     private PageViewModelBase _CurrentPage;
+    
     private ObservableCollection<Order> _orders;
     public PageViewModelBase CurrentPage
     {
@@ -40,11 +41,15 @@ public class WaiterMainViewModel : ViewModelBase
     public WaiterMainViewModel()
     {
         _CurrentPage = Pages[0];
+        
+        Orders = new ObservableCollection<Order>(Helper.GetContext().Orders.ToList());
 
         var canOpenNewOrderPage = this.WhenAnyValue((x => x.CurrentPage.OpenNewOrderWaiterPage));
         OpenNewOrderPage = ReactiveCommand.Create(OpenNewOrderPageImpl, canOpenNewOrderPage);
+        
         var canOpenOrdersWaiterPage = this.WhenAnyValue((x => x.CurrentPage.OpenOrdersWaiterPage));
         OpenOrdersPage = ReactiveCommand.Create(OpenOrdersWaiterPageImpl, canOpenOrdersWaiterPage);
+        
         var canOpenProfilePage = this.WhenAnyValue(x => x.CurrentPage.OpenProfilePage);
         OpenProfilePage = ReactiveCommand.Create(OpenProfilePageImpl, canOpenProfilePage);
 
@@ -84,7 +89,7 @@ public class WaiterMainViewModel : ViewModelBase
     {
          using(ExcelHelper helper = new ExcelHelper())
         {
-            if (helper.Open(filePath: Path.Combine(Environment.CurrentDirectory, @"C:\Users\Public\Documents\Отчёт о заказах.xlsx")))
+            if (helper.Open(filePath: Path.Combine(Environment.CurrentDirectory, @"C:\Users\Public\Documents\Принятые заказы.xlsx")))
             {
                 int i = 0;
                 var allOrders = Orders.ToList().OrderBy(p => p.DateAndTime).ToList();
